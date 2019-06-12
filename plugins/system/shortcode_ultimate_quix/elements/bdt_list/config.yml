@@ -1,0 +1,16 @@
+name: List
+slug: bdt_list
+groups: Shortcode Ultimate
+form:
+  general:
+    - name: icon
+      help: 'Type your icon name here. Example- "icon: home" or "licon: home"'
+      value: 'icon: star'
+
+    - name: icon_color
+      label: Icon Color
+      type: color
+
+    - name: content
+      type: editor
+      value: <ul><li>List item</li><li>List item</li><li>List item</li></ul>

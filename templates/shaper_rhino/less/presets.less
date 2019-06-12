@@ -1,0 +1,372 @@
+/**
+ * @package Helix Framework
+ * @author JoomShaper http://www.joomshaper.com
+ * @copyright Copyright (c) 2010 - 2017 JoomShaper
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or later
+*/
+
+@import 'variables';
+@import 'mixins';
+
+//Body
+body {
+    color: @text_color;
+    background-color: @bg_color;
+}
+
+
+// Anchor
+a{
+    color: @major_color;
+    &:hover {
+        color: darken(@major_color, 10%);
+    }
+}
+
+// Megamenu
+.sp-megamenu-parent {
+    >li {
+        &.active>a,
+        &:hover>a {
+            color: @major_color;
+        }
+    }
+
+}
+
+// Off Canvas
+#offcanvas-toggler {
+    >i {
+        color: @major4_color;
+        &:hover {
+            color: @major_color;
+        }
+    }
+}
+
+//Button
+.btn-primary,
+.sppb-btn-primary {
+    border-color: darken(@major_color, 6%);
+    background-color: @major_color;
+
+    &:hover {
+        border-color: darken(@major_color, 15%);
+        background-color: darken(@major_color, 10%);
+    }
+}
+
+// Topbar Social
+ul.social-icons {
+
+    >li {
+
+        a {
+
+            &:hover {
+                color: @major_color;
+            }
+        }
+    }
+}
+
+// Body Innerwrapper
+
+.layout-boxed .body-innerwrapper {
+    background: @bg_color;
+}
+
+// Module
+.sp-module {
+    ul {
+        >li {
+            >a {
+                color: @text_color;
+                &:hover {
+                    color: @major_color;
+                }
+            }
+        }
+    }
+
+    .latestnews {
+        >div {
+            >a {
+                color: @text_color;
+                &:hover {
+                    color: @major_color;
+                }
+            }
+        }
+    }
+
+    .tagscloud {
+        .tag-name {
+            &:hover {
+                background: @major_color;
+            }
+        }
+    }
+}
+
+// sp Simple Portfolio
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li.active > a,
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li > a:hover {
+    background: @major_color;
+}
+
+// Search
+.search {
+    .btn-toolbar {
+        button {
+            background: @major_color;
+        }
+    }
+}
+
+
+// Blog
+.post-format {
+    background: @major_color;
+}
+
+.voting-symbol{
+    span.star.active:before{
+        color: @major_color;
+    }
+}
+
+.sp-rating {
+    span.star:hover:before,
+        span.star:hover ~ span.star:before {
+        color: darken(@major_color, 10%);
+    }
+}
+
+.entry-link,
+.entry-quote {
+    background: @major_color;
+}
+
+blockquote {
+    border-color: @major_color;
+}
+
+.carousel-left,
+.carousel-right {
+
+    &:hover {
+        background: @major_color;
+    }
+}
+
+// Comingsoon
+.sp-comingsoon body {
+    background-color: @major_color;
+}
+
+// Pagination
+.pagination>li>a,
+.pagination>li>span {
+    color: @text_color;
+    &:hover,
+        &:focus {
+        color: @text_color;
+    }
+}
+
+.pagination>.active>a,
+.pagination>.active>span {
+    border-color: @major_color;
+    background-color: @major_color;
+    &:hover,
+        &:focus {
+        border-color: @major_color;
+        background-color: @major_color;
+    }
+}
+
+
+// **************** **************** ************** **************** **************** //
+// **************** ****************  Shaper Rhino  **************** **************** //
+// **************** **************** ************** **************** **************** //
+body{
+    background-color: @bg_color;
+}
+
+.tags a.label,
+.helix-social-share .helix-social-share-icon ul li div a,
+.article-details-wrap .article-info > dd ,
+.article-details-wrap .article-info > dd a{
+    color: @text_color;
+}
+
+.tags a.label:hover,
+.tags a.label:focus {
+    background-color: @text_color;
+}
+
+.btn.btn-link,
+.sppb-btn.btn-link,
+.btn.sppb-btn-link,
+.sppb-btn.sppb-btn-link,
+#sp-header .social-icons li a:hover,
+#sp-header .social-icons li a:focus,
+.sppb-slider-fullwidth-wrapper .sppb-fw-slider-button-wrapper a,
+.sppb-modal-selector.sppb-magnific-popup i,
+.sppb-addon-animated-number .sppb-animated-number,
+.rhino-home-news .sppb-addon-article h3 a:hover,
+.rhino-home-news .sppb-addon-article h3 a:focus,
+.rhino-home-news .sppb-addon-article .sppb-article-meta span,
+.white-header #offcanvas-toggler > i:hover,
+.white-header #sp-header .social-icons li a:hover,
+.white-header #sp-header .social-icons li a:focus,
+.core-service-section .sppb-addon-feature:hover .sppb-icon-container i,
+.home-two-portfolio-section .sp-simpleportfolio .sp-simpleportfolio-item .sp-simpleportfolio-content-wrap .sp-simpleportfolio-overlay-wrapper .sp-simpleportfolio-overlay .sp-vertical-middle .sp-simpleportfolio-title a:hover,
+.home-two-portfolio-section .sp-simpleportfolio .sp-simpleportfolio-item .sp-simpleportfolio-content-wrap .sp-simpleportfolio-overlay-wrapper .sp-simpleportfolio-overlay .sp-vertical-middle .sp-simpleportfolio-tags,
+.home4-feature-section .sppb-addon-feature .sppb-icon .sppb-icon-container i,
+.rihno-testimonial-section .sppb-icon i,
+.sppb-addon-testimonial .sppb-media .sppb-media-body blockquote footer,
+#sp-bottom .sppb-addon-social-media .social-media-text-wrap a:hover,
+#sp-bottom .sppb-addon-social-media .social-media-text-wrap a:focus,
+.service-page2-feature div.sppb-addon-feature .sppb-icon .sppb-icon-container i,
+.about-us-who-we-are .sppb-addon-text-block .sppb-addon-title span,
+.rhino-team-top-section .sppb-addon-text-block .sppb-addon-title,
+.com-spsimpleportfolio .sp-simpleportfolio.sp-simpleportfolio-view-items .sp-simpleportfolio-items .sp-simpleportfolio-item .sp-simpleportfolio-content-wrap .sp-simpleportfolio-details .sp-simpleportfolio-title a:hover,
+.com-spsimpleportfolio .sp-simpleportfolio.sp-simpleportfolio-view-items .sp-simpleportfolio-items .sp-simpleportfolio-item .sp-simpleportfolio-content-wrap .sp-simpleportfolio-details .sp-simpleportfolio-title a:focus,
+.sp-simpleportfolio.sp-simpleportfolio-view-item .sp-simpleportfolio-description .sp-simpleportfolio-info .sp-simpleportfolio-tags,
+.items-leading article h2 a:hover,
+.article-info > dd,
+.helix-social-share .helix-social-share-icon ul li div a:hover,
+.helix-social-share .helix-social-share-icon ul li div a:focus,
+div.pagination ul.pagination li a.last:hover,
+.pagination-wrapper ul.pagination li a.last:hover,
+div.pagination ul.pagination li a.first:hover,
+.pagination-wrapper ul.pagination li a.first:hover,
+div.pagination ul.pagination li a.last:focus,
+.pagination-wrapper ul.pagination li a.last:focus,
+div.pagination ul.pagination li a.first:focus,
+.pagination-wrapper ul.pagination li a.first:focus,
+.article-details-wrap .article-info > dd a:hover,
+.article-details-wrap .article-info > dd a:focus,
+.article-details-wrap .article-info > dd i,
+.top-search-input-wrap .search-suggested-tag ul li a.active,
+.btn.btn-default, .btn.sppb-btn-default, .sppb-btn.btn-default, .sppb-btn.sppb-btn-default,
+.com-spsimpleportfolio .sp-simpleportfolio.sp-simpleportfolio-view-items .sp-simpleportfolio-items .sp-simpleportfolio-item .sp-simpleportfolio-content-wrap .sp-simpleportfolio-details .sp-simpleportfolio-tags{
+    color: @major_color;
+}
+
+.btn.btn-link:hover,
+.sppb-btn.btn-link:hover,
+.btn.sppb-btn-link:hover,
+.sppb-btn.sppb-btn-link:hover,
+.btn.btn-link:focus,
+.sppb-btn.btn-link:focus,
+.btn.sppb-btn-link:focus,
+.sppb-btn.sppb-btn-link:focus,
+#sp-header .social-icons li a,
+.sp-megamenu-parent > li > a,
+.sp-megamenu-parent > li > span{
+    color: @major4_color;
+}
+
+.btn.btn-success,
+.sppb-btn.btn-success,
+.btn.sppb-btn-success,
+.sppb-btn.sppb-btn-success,
+.btn.btn-default:hover,
+.sppb-btn.btn-default:hover,
+.btn.sppb-btn-default:hover,
+.sppb-btn.sppb-btn-default:hover,
+.icon-top-wrapper i.search-open-icon:hover,
+.top-search-input-wrap .search-upper-part,
+.sppb-slider-fullwidth-wrapper .owl-carousel .owl-controls .owl-dots .owl-dot.active span,
+.sppb-slider-fullwidth-wrapper .sppb-fw-slider-button-wrapper a:hover,
+.major-color-bg,
+.sppb-modal-selector.sppb-magnific-popup,
+.rhino-home-news .sppb-addon-article:hover,
+.white-header .icon-top-wrapper i.search-open-icon:hover,
+.home-two-portfolio-section .sp-simpleportfolio .sp-simpleportfolio-item .sp-simpleportfolio-content-wrap .sp-simpleportfolio-overlay-wrapper .sp-simpleportfolio-overlay .sp-vertical-middle .sp-simpleportfolio-title i:hover,
+.sppb-addon-tab .sppb-tab .sppb-nav-tabs li.active a,
+.rhino-skill-section .sppb-progress-bar-wrap .sppb-progress .sppb-progress-bar-primary,
+body.com-spsimpleportfolio:not(.portfolio-v2) .sp-simpleportfolio.sp-simpleportfolio-view-items .sp-simpleportfolio-item:hover .sp-simpleportfolio-content-wrap .sp-simpleportfolio-details .sp-simpleportfolio-title i,
+body.com-spsimpleportfolio:not(.portfolio-v2) .sp-simpleportfolio.sp-simpleportfolio-view-items .sp-simpleportfolio-item:focus .sp-simpleportfolio-content-wrap .sp-simpleportfolio-details .sp-simpleportfolio-title i ,
+.sp-simpleportfolio.sp-simpleportfolio-view-item .sp-simpleportfolio-description .sp-simpleportfolio-info i,
+.items-row article.item:hover .article-info-wrap,
+div.pagination ul.pagination li.active a,
+.pagination-wrapper ul.pagination li.active a,
+.article-details-wrap .sppb-carousel .sppb-carousel-arrow i:hover,
+.article-details-wrap .sppb-carousel .sppb-carousel-arrow i:focus,
+.top-search-input-wrap .search-upper-part,
+.home-two-portfolio-section .sp-simpleportfolio .sp-simpleportfolio-item:hover .sp-simpleportfolio-overlay-wrapper .sp-simpleportfolio-overlay .sp-vertical-middle .sp-simpleportfolio-title:before,
+.service-page-feature .sppb-addon-feature:hover,
+.com-spsimpleportfolio .sp-simpleportfolio.sp-simpleportfolio-view-items .sp-simpleportfolio-items .sp-simpleportfolio-item:hover .sp-simpleportfolio-details .sp-simpleportfolio-title::before,
+.sp-simpleportfolio.sp-simpleportfolio-view-item .sp-simpleportfolio-description .sp-simpleportfolio-info:before{
+    background: @major_color;
+}
+
+.major-color-bg2,
+.btn.btn-primary,
+.sppb-btn.btn-primary,
+.btn.sppb-btn-primary,
+.sppb-btn.sppb-btn-primary,
+.btn.btn-success:hover,
+.sppb-btn.btn-success:hover,
+.btn.sppb-btn-success:hover,
+.sppb-btn.sppb-btn-success:hover,
+.btn.btn-success:focus,
+.sppb-btn.btn-success:focus,
+.btn.sppb-btn-success:focus,
+.sppb-btn.sppb-btn-success:focus,
+.rhino-skill-section .sppb-progress-bar-wrap .sppb-progress .sppb-progress-bar-success{
+    background: @major2_color;
+}
+
+.major-color-bg3,
+.rhino-skill-section .sppb-progress-bar-wrap .sppb-progress .sppb-progress-bar-info{
+    background: @major3_color;
+}
+
+.major-color-bg4,
+.top-search-input-wrap .search-bottom-part,
+.icon-top-wrapper i.search-open-icon,
+#sp-bottom,
+#sp-footer,
+.rhino-skill-section .sppb-progress-bar-wrap .sppb-progress .sppb-progress-bar-warning,
+.top-search-input-wrap .search-bottom-part,
+.sppb-slider-fullwidth-wrapper {
+    background: @major4_color;
+}
+
+.sp-simpleportfolio .sp-simpleportfolio-item .sp-simpleportfolio-overlay-wrapper .sp-simpleportfolio-overlay,
+.sppb-addon-person div.sppb-person-image .sppb-person-info-wrap,
+body.portfolio-v2.com-spsimpleportfolio .sp-simpleportfolio.sp-simpleportfolio-view-items .sp-simpleportfolio-item .sp-simpleportfolio-content-wrap .sp-simpleportfolio-img-wrap:after{
+    background: fade(@major_color, 90%);
+}
+
+.white-header #sp-header.menu-fixed {
+    background: fade(@major4_color, 90%);
+}
+
+.major-color-bg5 {
+    background: @major5_color;
+}
+.sppb-addon-ajax-contact .sppb-ajax-contact-content .sppb-ajaxt-contact-form .sppb-form-group textarea:focus,
+.sppb-addon-ajax-contact .sppb-ajax-contact-content .sppb-ajaxt-contact-form .sppb-form-group input:focus {
+    border-color: @major_color;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item > a,
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item span,
+.sp-megamenu-parent .sp-dropdown .sp-dropdown-inner .sp-module .latestnews div a,
+.sp-megamenu-parent .sp-dropdown .sp-dropdown-inner .sp-module .tagspopular ul li a {
+    color: @megatx_color;
+}
+//Sub page header
+.sp-page-title {
+    background: url(../../images/@{preset}-page-title-bg.jpg) no-repeat scroll center center / cover;
+    h2{
+        &:before{
+            background: url(../../images/@{preset}-title-half-img.png) no-repeat scroll center center / cover;
+        }
+    }
+}

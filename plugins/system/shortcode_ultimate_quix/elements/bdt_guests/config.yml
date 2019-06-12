@@ -1,0 +1,8 @@
+name: Guests
+slug: bdt_guests
+groups: Shortcode Ultimate
+form:
+  general:
+    - name: content
+      type: editor
+      value: Content for guests

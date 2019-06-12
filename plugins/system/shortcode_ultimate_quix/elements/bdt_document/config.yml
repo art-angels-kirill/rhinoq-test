@@ -1,0 +1,28 @@
+name : Document
+slug : bdt_document
+groups : Shortcode Ultimate
+form :
+  general :
+    - name: url
+      label: URL
+      help: 'URL to uploaded document. Supported formats: doc, xls, pdf etc. Such as: http://bdthemes.com/resource/how_to_install_quick.pdf'
+
+    - name: width
+      type: slider
+      min: 200
+      max: 1600
+      step: 20
+      value: 600
+
+    - name: height
+      type: slider
+      min: 200
+      max: 1600
+      step: 20
+      value: 600
+
+    - name: responsive
+      type: switch
+      value: true
+
+        

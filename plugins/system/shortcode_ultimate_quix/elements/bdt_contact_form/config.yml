@@ -1,0 +1,26 @@
+name: Contact Form
+slug: bdt_contact_form
+groups: Shortcode Ultimate
+
+form:
+  general:
+    - name: email
+      help: Enter your admin email for get email
+
+    - name: name
+      help: Show/Hide name field in contact form
+      type: switch
+      value: true
+
+    - name: reset
+      help: Show/Hide reset button in contact form
+      label: Reset Form
+      type: switch
+
+    - name: submit_button_text
+      label: Submit Button Text
+      value: Send Message
+
+  styles:
+    - name: margin
+      type: margin

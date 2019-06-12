@@ -1,0 +1,10 @@
+name: Load Module
+slug: bdt_load_module
+groups: Shortcode Ultimate
+form:
+  general:
+    - name: id
+      label: Module ID
+
+    - name: module_name
+      label: Module Name

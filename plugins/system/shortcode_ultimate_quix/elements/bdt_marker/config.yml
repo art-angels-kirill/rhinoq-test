@@ -1,0 +1,89 @@
+name: Marker
+slug: bdt_marker
+groups: ["Shortcode Ultimate", "content"]
+form:
+  general:
+  - name: photo
+    help: Type your desired image link or upload an image for Marker BG
+    type: image
+    label: Image
+    value: http://lorempixel.com/400/300/food/
+
+  - name: items
+    type: group-repeater
+    schema:
+      - name: tooltip_title
+        value: Marker Tooltip Title 1
+
+      - name: icon_type
+        label: Icon Type
+        type: select
+        options:
+          fontawesome: Fontawesome Icon
+          lineicon: Line Icon
+          image: Image Icon
+        value: fontawesome
+
+      - name: icon_fontawesome
+        label: Icon Fontawesome
+        type: icon
+        value: fa fa-map-marker
+        depends:
+          icon_type: fontawesome
+
+      - name: icon_lineicon
+        label: Line Icon
+        help: "Type line icon name here.  Example: map-marker"
+        value: map-marker
+        depends:
+          icon_type: lineicon
+
+      - name: icon_image
+        label: Image Icon
+        type: image
+        depends:
+        icon_type: image
+
+      - name: url
+        label: URL
+
+      - name: from_left
+        label: Horizontal Position
+        type: slider
+        min: -400
+        max: 400
+        step: 2
+        value: 75
+
+      - name: from_top
+        label: Vertical Position
+        type: slider
+        min: -400
+        max: 400
+        step: 2
+        value: 50
+
+      - name: tooltip_style
+        label: Tooltip Style
+        type: select
+        options:
+          light: Light
+          dark: Dark
+          yellow: Yellow
+          green: Green
+          red: Red
+          blue: Blue
+          youtube: Youtube
+          tipsy: Tipsy
+          bootstrap: Bootstrap
+          jtools: jTools
+          tipped: Tipped
+          cluetip: Cluetip
+        value: yellow
+
+      - name: content
+        type: editor
+        value: Marker Tooltip Description
+
+    value:
+      - title: Marker Tooltip Title 1

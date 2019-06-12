@@ -1,0 +1,104 @@
+name : File Download
+slug : bdt_file_download
+groups : Shortcode Ultimate
+form :
+  general :
+    - name: id
+      label: File ID
+      help: You can add unique ID for the file download from here.
+
+    - name: url
+      label: Select File
+      type: file-manager
+
+    - name: show_title
+      label: Show Title
+      type: switch
+      value: true
+
+    - name: custom_title
+      label: Custom Title
+
+    - name: save_as
+      label: Save As Name
+
+    - name: show_count
+      label: Show Counter
+      type: switch
+      value: true
+
+    - name: show_like_count
+      label: Show Like Counter
+      type: switch
+      value: true
+
+    - name: show_download_count
+      label: Download Counter
+      type: switch
+      value: true
+
+    - name: show_file_size
+      label: File Size
+      type: switch
+      value: true
+
+    - name: resumable
+      type: switch
+      value: true
+
+    - name: download_speed
+      label: Download Speed
+      type: slider
+      min: 10
+      max: 10000
+      step: 10
+      value: 500
+
+  Icon :
+    - name: icon
+      help: 'Type your icon name here. Example- "icon: home" or "licon: home"'
+      value: 'icon: download'
+
+  Button :
+    - name: button_text
+      label: Button Text
+      value: Download Now
+
+    - name: button_color
+      label: Button Color
+      type: color
+
+    - name: button_hover_color
+      label: Button Hover Color
+      type: color
+
+    - name: button_background
+      label: Button Background
+      type: color
+
+    - name: button_hover_background
+      label: Button Hover Background
+      type: color
+
+    - name: button_class
+      label: Button Class
+
+  Style :
+    - name: color
+      type: color
+
+    - name: background
+      type: color
+
+    - name: radius
+      help: "You can set border radius from here, for example: 3px 10px 25px also you can set value as em, % etc if you need"
+      value: 3px
+
+    - name: padding
+      type: padding
+
+    - name: margin
+      type: margin
+
+
+        
